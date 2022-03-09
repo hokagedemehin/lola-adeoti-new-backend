@@ -2,7 +2,7 @@
   "name": "lola-adeoti-new-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Backend Admin Portal to Lola Adeoti Bags & Accessories",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -20,7 +20,7 @@
     "sqlite3": "5.0.2"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Demehin Ibukun"
   },
   "strapi": {
     "uuid": "2580d067-142f-44cf-96fb-904a8ddd816f"

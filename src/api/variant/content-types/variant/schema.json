@@ -43,26 +43,47 @@
       "type": "richtext"
     },
     "visible": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "sku": {
       "type": "biginteger"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "product": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::product.product",
       "inversedBy": "variants"
+    },
+    "sale": {
+      "type": "boolean",
+      "default": true
+    },
+    "bestOffer": {
+      "type": "boolean",
+      "default": false
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "hex": {
+      "type": "string"
     }
   }
 }
