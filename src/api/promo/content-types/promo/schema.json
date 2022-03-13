@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promos",
+  "info": {
+    "singularName": "promo",
+    "pluralName": "promos",
+    "displayName": "promo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    }
+  }
+}
