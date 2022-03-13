@@ -34,6 +34,33 @@
     "popular": {
       "type": "boolean",
       "default": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "nairaPrice": {
+      "type": "decimal"
+    },
+    "nairaSalePrice": {
+      "type": "decimal"
+    },
+    "dollarPrice": {
+      "type": "decimal"
+    },
+    "dollarSalePrice": {
+      "type": "decimal"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
     }
   }
 }
