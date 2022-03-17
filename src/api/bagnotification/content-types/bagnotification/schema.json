@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bagnotifications",
+  "info": {
+    "singularName": "bagnotification",
+    "pluralName": "bagnotifications",
+    "displayName": "bagnotification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "variantId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "userName": {
+      "type": "string"
+    },
+    "userEmail": {
+      "type": "email"
+    }
+  }
+}

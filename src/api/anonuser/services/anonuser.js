@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * image service.
+ * anonuser service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::image.image');
+module.exports = createCoreService('api::anonuser.anonuser');

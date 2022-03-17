@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "anonusers",
+  "info": {
+    "singularName": "anonuser",
+    "pluralName": "anonusers",
+    "displayName": "anonuser",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::address.address",
+      "inversedBy": "anonuser"
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cart.cart",
+      "mappedBy": "anonuser"
+    }
+  }
+}

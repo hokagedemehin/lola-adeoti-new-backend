@@ -21,12 +21,6 @@
     "dollarPrice": {
       "type": "decimal"
     },
-    "images": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::image.image",
-      "mappedBy": "variant"
-    },
     "nairaSalePrice": {
       "type": "decimal"
     },
@@ -84,6 +78,12 @@
     },
     "hex": {
       "type": "string"
+    },
+    "cart": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cart.cart",
+      "mappedBy": "variant"
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "singularName": "address",
+    "pluralName": "addresses",
+    "displayName": "address"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "text"
+    },
+    "anonuser": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::anonuser.anonuser",
+      "inversedBy": "address"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "singularName": "cart",
+    "pluralName": "carts",
+    "displayName": "cart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cartId": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "nairaPrice": {
+      "type": "decimal"
+    },
+    "total": {
+      "type": "integer"
+    },
+    "variantId": {
+      "type": "integer"
+    },
+    "anonuser": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::anonuser.anonuser",
+      "inversedBy": "carts"
+    },
+    "variant": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::variant.variant",
+      "inversedBy": "cart"
+    },
+    "complete": {
+      "type": "boolean",
+      "default": false
+    },
+    "dollarPrice": {
+      "type": "decimal"
+    }
+  }
+}
