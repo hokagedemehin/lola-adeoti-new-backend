@@ -21,9 +21,6 @@
     "nairaPrice": {
       "type": "decimal"
     },
-    "total": {
-      "type": "integer"
-    },
     "variantId": {
       "type": "integer"
     },
@@ -45,6 +42,24 @@
     },
     "dollarPrice": {
       "type": "decimal"
+    },
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "image": {
+      "type": "string"
+    },
+    "variantQty": {
+      "type": "integer"
+    },
+    "strapiId": {
+      "type": "integer"
+    },
+    "link": {
+      "type": "string"
     }
   }
 }
