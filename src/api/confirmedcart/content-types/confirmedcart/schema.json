@@ -1,0 +1,79 @@
+{
+  "kind": "collectionType",
+  "collectionName": "confirmedcarts",
+  "info": {
+    "singularName": "confirmedcart",
+    "pluralName": "confirmedcarts",
+    "displayName": "confirmedcart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "orderId": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "phoneNumber": {
+      "type": "string"
+    },
+    "transactionId": {
+      "type": "string"
+    },
+    "flwRef": {
+      "type": "string"
+    },
+    "emailAddress": {
+      "type": "email"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "string"
+    },
+    "address": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::address.address",
+      "inversedBy": "confirmedcarts"
+    },
+    "anonuser": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::anonuser.anonuser",
+      "inversedBy": "confirmedcarts"
+    },
+    "carts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cart.cart",
+      "mappedBy": "confirmedcart"
+    },
+    "country": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "deliveryAddress": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "txRef": {
+      "type": "string"
+    }
+  }
+}

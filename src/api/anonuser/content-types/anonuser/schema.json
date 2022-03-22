@@ -28,12 +28,18 @@
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::address.address",
-      "inversedBy": "anonuser"
+      "mappedBy": "anonuser"
     },
     "carts": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::cart.cart",
+      "mappedBy": "anonuser"
+    },
+    "confirmedcarts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::confirmedcart.confirmedcart",
       "mappedBy": "anonuser"
     }
   }

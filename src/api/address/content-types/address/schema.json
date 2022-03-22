@@ -4,7 +4,8 @@
   "info": {
     "singularName": "address",
     "pluralName": "addresses",
-    "displayName": "address"
+    "displayName": "address",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,13 +18,13 @@
     "lastName": {
       "type": "string"
     },
-    "email": {
+    "emailAddress": {
       "type": "email"
     },
     "phoneNumber": {
       "type": "string"
     },
-    "address": {
+    "deliveryAddress": {
       "type": "string"
     },
     "additionalInfo": {
@@ -34,6 +35,18 @@
       "relation": "oneToOne",
       "target": "api::anonuser.anonuser",
       "inversedBy": "address"
+    },
+    "country": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "confirmedcarts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::confirmedcart.confirmedcart",
+      "mappedBy": "address"
     }
   }
 }

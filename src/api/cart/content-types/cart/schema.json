@@ -60,6 +60,12 @@
     },
     "link": {
       "type": "string"
+    },
+    "confirmedcart": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::confirmedcart.confirmedcart",
+      "inversedBy": "carts"
     }
   }
 }
