@@ -27,7 +27,7 @@
     "transactionId": {
       "type": "string"
     },
-    "flwRef": {
+    "ref": {
       "type": "string"
     },
     "emailAddress": {
@@ -72,7 +72,10 @@
     "currency": {
       "type": "string"
     },
-    "txRef": {
+    "trxRef": {
+      "type": "string"
+    },
+    "payment": {
       "type": "string"
     }
   }
