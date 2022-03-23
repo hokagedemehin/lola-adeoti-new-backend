@@ -77,6 +77,15 @@
     },
     "payment": {
       "type": "string"
+    },
+    "orderStatus": {
+      "type": "enumeration",
+      "enum": [
+        "Processing",
+        "Out_for_delivery",
+        "Delivered"
+      ],
+      "default": "Processing"
     }
   }
 }
