@@ -32,9 +32,9 @@
     },
     "variant": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::variant.variant",
-      "inversedBy": "cart"
+      "inversedBy": "carts"
     },
     "complete": {
       "type": "boolean",

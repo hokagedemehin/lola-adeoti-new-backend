@@ -79,9 +79,9 @@
     "hex": {
       "type": "string"
     },
-    "cart": {
+    "carts": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::cart.cart",
       "mappedBy": "variant"
     }
