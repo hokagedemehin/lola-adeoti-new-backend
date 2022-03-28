@@ -41,6 +41,12 @@
       "relation": "oneToMany",
       "target": "api::confirmedcart.confirmedcart",
       "mappedBy": "anonuser"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "anonuser"
     }
   }
 }
