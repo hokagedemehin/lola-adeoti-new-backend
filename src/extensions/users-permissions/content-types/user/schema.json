@@ -68,6 +68,12 @@
       "relation": "oneToOne",
       "target": "api::anonuser.anonuser",
       "inversedBy": "user"
+    },
+    "anonId": {
+      "type": "integer"
+    },
+    "addressId": {
+      "type": "integer"
     }
   }
 }
