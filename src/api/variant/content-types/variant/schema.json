@@ -84,6 +84,10 @@
       "relation": "oneToMany",
       "target": "api::cart.cart",
       "mappedBy": "variant"
+    },
+    "new": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
