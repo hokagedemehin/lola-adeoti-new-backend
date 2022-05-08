@@ -61,6 +61,9 @@
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "disclaimer": {
+      "type": "string"
     }
   }
 }

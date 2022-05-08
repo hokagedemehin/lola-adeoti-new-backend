@@ -19,7 +19,8 @@
     "@strapi/strapi": "4.1.1",
     "pg": "^8.7.3",
     "pg-connection-string": "^2.5.0",
-    "sqlite3": "5.0.2"
+    "sqlite3": "5.0.2",
+    "strapi-plugin-comments": "^2.1.5"
   },
   "author": {
     "name": "Demehin Ibukun"
