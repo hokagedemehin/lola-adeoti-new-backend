@@ -4,20 +4,46 @@
   "info": {
     "singularName": "review",
     "pluralName": "reviews",
-    "displayName": "review"
+    "displayName": "review",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
+    "firstName": {
       "type": "string"
     },
     "email": {
       "type": "email"
     },
     "content": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "anonuser": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::anonuser.anonuser",
+      "inversedBy": "reviews"
+    },
+    "product": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product.product",
+      "inversedBy": "reviews"
+    },
+    "approved": {
+      "type": "boolean",
+      "default": false
+    },
+    "bagName": {
       "type": "string"
     }
   }

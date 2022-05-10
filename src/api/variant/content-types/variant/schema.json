@@ -98,6 +98,12 @@
       ],
       "type": "media",
       "multiple": true
+    },
+    "bagnotifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::bagnotification.bagnotification",
+      "mappedBy": "variant"
     }
   }
 }

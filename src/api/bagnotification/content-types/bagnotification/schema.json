@@ -4,7 +4,8 @@
   "info": {
     "singularName": "bagnotification",
     "pluralName": "bagnotifications",
-    "displayName": "bagnotification"
+    "displayName": "bagnotification",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,21 +21,17 @@
     "color": {
       "type": "string"
     },
-    "image": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": true
-    },
     "userName": {
       "type": "string"
     },
     "userEmail": {
       "type": "email"
+    },
+    "variant": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::variant.variant",
+      "inversedBy": "bagnotifications"
     }
   }
 }

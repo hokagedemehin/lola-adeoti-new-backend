@@ -13,6 +13,7 @@
   "dependencies": {
     "@strapi/plugin-i18n": "4.1.1",
     "@strapi/plugin-users-permissions": "4.1.1",
+    "@strapi/provider-email-amazon-ses": "^4.1.9",
     "@strapi/provider-email-nodemailer": "^4.1.5",
     "@strapi/provider-email-sendmail": "^4.1.5",
     "@strapi/provider-upload-cloudinary": "^4.1.1",
