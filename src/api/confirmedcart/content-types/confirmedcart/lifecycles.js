@@ -3,8 +3,9 @@ module.exports = {
     const { result } = event;
     try {
       await strapi.plugins["email"].services.email.send({
-        to: "ibk2k7@gmail.com",
+        to: "accessorizedbylisa@gmail.com",
         from: "demehin.george@gmail.com",
+        bcc: "ibk2k7@gmail.com",
         subject: `New Bag Order - ${result.transactionId}`,
         text: `Content is loading...`,
         html: `<div>
@@ -13,7 +14,6 @@ module.exports = {
                 <p>More details can be found in the backend. Please check for ID #${result.id} in the confirmedCart collection type</p>
                 <h4>Quick Summary</h4>
                 <p>Name: ${result.firstName} ${result.lastName}</p>
-                <p>Amount: </p>
                 <p>Phone No: ${result.phoneNumber}</p>
                 <p>Email: ${result.emailAddress}</p>
                 <p>Address: ${result.deliveryAddress}</p>

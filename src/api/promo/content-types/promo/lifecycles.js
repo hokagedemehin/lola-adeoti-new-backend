@@ -1,10 +1,10 @@
 module.exports = {
-  async afterCreate(event) {
-    const { result } = event;
+  async afterCreate() {
     try {
       await strapi.plugins["email"].services.email.send({
-        to: "ibk2k7@gmail.com",
+        to: "accessorizedbylisa@gmail.com",
         from: "demehin.george@gmail.com",
+        bcc: "ibk2k7@gmail.com",
         subject: "New Promo & Deals Subscription",
         text: `Content is loading...`,
         html: `<div>

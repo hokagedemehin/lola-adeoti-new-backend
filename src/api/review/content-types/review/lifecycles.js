@@ -3,8 +3,9 @@ module.exports = {
     const { result } = event;
     try {
       await strapi.plugins["email"].services.email.send({
-        to: "ibk2k7@gmail.com",
+        to: "accessorizedbylisa@gmail.com",
         from: "demehin.george@gmail.com",
+        bcc: "ibk2k7@gmail.com",
         subject: "A new review is awaiting your approval",
         text: `Content is loading...`,
         html: `<div>
